@@ -1,0 +1,28 @@
+.who{
+    transform: translateY(60%);
+    font-size: 24px;
+}
+@media(max-width: 1300px){
+.img-about{
+    width: 1100px;
+}}
+@media(max-width: 1200px){
+    .img-about{
+        width: 900px;
+    }}
+    @media(max-width: 1000px){
+        .img-about{
+            width: 700px;
+        }}
+        @media(max-width: 780px){
+            .img-about{
+                width: 500px;
+            }}
+            @media(max-width: 550px){
+                .img-about{
+                    width: 400px;
+                }}
+                @media(max-width: 450px){
+                    .img-about{
+                        width: 300px;
+                    }}

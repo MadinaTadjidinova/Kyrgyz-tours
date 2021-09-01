@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+body{
+    font-family: 'Besley', serif;
+}
+a.active {
+    color: #16f1dc;
+    font-weight: 500
+}
+.img{
+    width: 100px;
+  }
+  .maincontainer {
+    height: 300px;
+  }
+  .back p {
+    font-size: 15px;
+  }
+  .front .card-title {
+    background: #0a5175;
+    color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    top: 167px;
+    right: 14px;
+    left: 15px;
+    transform: translateY(56px);
+  }
+  .front .long-title{
+    top: 180px;
+  }
+  .front .md-title{
+    top: 218px;
+  }
+  .front .fortop {
+    top: 170px;
+  }
+  #hero{
+    position: relative;
+  }
+#hero video{
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: cover;
+}
+#hero .content{
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#hero .content h1{
+  color: #fff;
+}
+.title{
+    font-family: 'Besley', serif;
+    font-weight: 600
+}
+.title-p{
+    font-weight: 500;
+}
+.b-left{
+    border-left: 3px solid #fff;
+    height: 320px;
+}
+.txt-ab{
+    font-size: 18px;
+    font-weight: 400;
+}
+  /* style the maincontainer class with all child div's of class .front */
+  .maincontainer > .front {
+    position: relative;
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform 0.5s linear 0s;
+  }
+  /* style the maincontainer class with all child div's of class .back */
+  .maincontainer > .back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 342px;
+    height: 290px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+    transition: transform 0.5s linear 0s;
+  }
+  .maincontainer:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .maincontainer:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+.fullscreen-bg__video{
+    width: 100%;
+}
+.i{
+    border-radius: 10px;
+}
+
+.text{
+  position: absolute;
+  right: 0;
+  bottom: 280px;
+}
+.whywe{
+    width: 800px;
+    height: 550px;
+}
+.gallery-img{
+    width: 140px;
+    height: 140px;
+}
+@media(max-width:1050px){
+    .prick{
+        font-size: 14px;
+    }
+  }
+@media(max-width:900px){
+  .text{
+    bottom: 380px;
+  }
+}
+@media(max-width:850px){
+    .b-left{
+        border: none;
+    }
+  }
+  @media(max-width:815px){
+      .img-fluit{
+          width: 30px;
+      }
+  }
+@media(max-width:800px){
+    .prick{
+        font-size: 12px;
+    }
+}
+
+  @media(max-width:770px){
+    .img-fluit{
+        width: 20px;
+    }
+    .txt-ab{
+        font-size: 10px;
+    }
+  }
+  @media(max-width:620px){
+    .belake{
+        display: none;
+    }
+    .prick{
+        font-size: 15px;
+    }
+   }
+@media(max-width:600px){
+  .text{
+    bottom: 430px;
+  }
+}
+@media(max-width:400px){
+  .text{
+    bottom: 470px;
+  }
+}
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
